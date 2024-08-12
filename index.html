@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@300;400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@300;400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+
+
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "outfit", serif;
+        font-weight: 400;
+    }
+
+    body{
+        background-color:hsl(30, 54%, 90%);
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px;
+    }
+
+    .main{
+        border: 1px solid beige;
+        border-radius: 20px;
+        width: 40%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 20px;
+    }
+    ul,ol{
+        list-style-position: inside;
+    }
+    img{
+        border-radius: 20px;
+    }
+
+
+    .pretime{
+        border: 1px solid white;
+        border-radius: 3px;
+        background-color: hsl(330, 100%, 98%);
+        padding: 15px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    li::marker{
+        color: hsl(14, 45%, 36%);
+    }
+
+    td{
+        border-bottom: 1px solid grey;
+        border-collapse: collapse;
+    }
+
+    table{
+        border-collapse: collapse;
+    }
+    .ingredients{
+        margin-top: 10px;
+        line-height: 30px;
+    }
+
+    ol li{
+        margin-top: 10px;
+    }
+
+    .nutrition{
+        margin-top: 10px;
+    }
+
+    td{
+        padding: 15px;
+    }
+
+    td:last-child{
+        color: hsl(14, 45%, 36%);
+        font-weight: bolder;
+    }
+
+    h1,h2,h3{
+        font-family: 'young-serif',serif;
+        font-weight: 700;
+    }
+
+    b{
+        font-weight: 600;
+    }
+
+
+
+  </style>
+</head>
+<body>
+    <div class="main">
+        <img src="assets/images/image-omelette.jpeg" alt="omlette image" width="100%" height="250px">
+        <h1 style="margin-top: 15px;">Simple Omlette Recipe</h1>
+        <p style="margin-top: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur enim vero beatae temporibus est animi sit, quas accusamus cum facilis similique voluptas laborum ipsam eveniet recusandae odit facere illum.</p>
+        <div class="pretime">
+            <h3 style="color: hsl(332, 51%, 32%);">Preparation Time</h3>
+            <ul>
+                <li><b> Total:</b>Approximately 10 minutes</li>
+                <li><b>  Preparation:</b>5 minutes</li>
+                <li><b> cooking:</b>5 minutes</li>
+            </ul>
+        </div>
+        <div class="ingredients">
+        <h2 style="color: hsl(14, 45%, 36%); font-weight: 700;">Ingredients</h2>
+        <ul>
+            <li style="margin-top: 8px;"> Lorem, ipsum.</li>
+            <li> Lorem, ipsum dolor.</li>
+            <li> Lorem ipsum dolor sit amet.</li>
+            <li> Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        </ul>
+        </div>
+        <br><hr><br>
+        <div class="instructions">
+        <h2 style="color: hsl(14, 45%, 36%);">Instructions</h2>
+        <ol>
+            <li style="margin-top: 10px;"><b>Beat the dogs:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque expedita nobis quidem corrupti commodi. Eius!</li>
+            <li><b>Heat the pan:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quo.</li>
+            <li><b>Cook The omelette:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus quaerat commodi corrupti ipsam perspiciatis?</li>
+            <li><b>Add fillings(optional):</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur fugiat, rem magnam numquam possimus.</li>
+            <li><b>Fold and serve:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum possimus doloribus veniam ad quia sint.</li>
+            <li><b>Enjoy:</b> Lorem, ipsum dolor sit amet consectetur adipisicing.</li> 
+        </ol>
+        </div>
+        <br><hr><br>
+        <h2 style="color: hsl(14, 45%, 36%);">Nutrition</h2>
+        <p style="margin-top: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, neque.</p>
+        <table style="margin-top: 10px;">
+            <tr>
+                <td>calories</td>
+                <td>277kcal</td>
+            </tr>
+            <tr>
+                <td>carbs</td>
+                <td>0g</td>
+            </tr>
+            <tr>
+                <td>Protein</td>
+                <td>20g</td>
+            </tr>
+            <tr>
+                <td>Fat</td>
+                <td>22g</td>
+            </tr>
+
+        </table>
+
+    </div>
+</body>
+</html>
